@@ -1,4 +1,4 @@
-console.log("ola k ase");
+
 const futures = [
     "Better Luck next time",
     "Thats not going to happend",
@@ -22,7 +22,15 @@ const futures = [
     "keep your mind and hope",
 
 ];
-const Angel = "The Angels say: ";
-const Evil = "The Demons say ";
+const adivinator = [
+    "The Angels say: ",
+    "The Demons say ",
+    "The Destiny say: "
+];
 
-
+function getFortunes(){
+    let getFortunes1 = futures[Math.floor(Math.random() * futures.length)];
+    let getFortunes2 = adivinator[Math.floor(Math.random() * adivinator.length)]
+    console.log(getFortunes2, getFortunes1);
+}
+console.log(getFortunes());
